@@ -26,14 +26,14 @@ const data = {
 };
 
 describe("calculateTotalPoints", () => {
-  it("should return total normal hill points", () => {
+  it("should return total points for normal hill ", () => {
     const actual = calculateTotalPoints(data.normal.distance, "normal", data.normal.kPoint, data.normal.results, data.normal.gate, data.normal.wind);
 
     const expected = 131.8;
 
     assert.equal(actual, expected);
   });
-  it("should return total big hill points", () => {
+  it("should return total points for big hill ", () => {
     const actual = calculateTotalPoints(data.big.distance, "big", data.big.kPoint, data.big.results, data.big.gate, data.big.wind);
 
     const expected = 137.3;
@@ -41,7 +41,7 @@ describe("calculateTotalPoints", () => {
     assert.equal(actual, expected);
   });
 
-  it("should return total mammouth hill points", () => {
+  it("should return total points for mammouth hill ", () => {
     const actual = calculateTotalPoints(data.mammouth.distance, "mammouth", data.mammouth.kPoint, data.mammouth.results, data.mammouth.gate, data.mammouth.wind);
 
     const expected = 203.3;
