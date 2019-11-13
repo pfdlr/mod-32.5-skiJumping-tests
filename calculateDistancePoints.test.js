@@ -1,5 +1,5 @@
 const assert = require("assert");
-const calculateDistancePoints = require ("./calculateDistancePoints");
+const calculateDistancePoints = require("./calculateDistancePoints");
 
 describe('calculateDistancePoints', () => {
     it('should return distance points for normal hill', () => {
@@ -20,5 +20,5 @@ describe('calculateDistancePoints', () => {
         const message = 'Check \`hillSize\` name or type of data';
         assert.equal(actual, expected, message);
     });
-    
+
 });
